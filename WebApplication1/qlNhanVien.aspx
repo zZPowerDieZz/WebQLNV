@@ -30,7 +30,8 @@
         </UpdateParameters>
     </asp:SqlDataSource>
 
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="MaNV" DataSourceID="dsNhanVien">
+    <asp:GridView ID="gvNhanVien" runat="server" AutoGenerateColumns="False" AllowPaging="true" CssClass="table table-bordered table-hover"
+        DataKeyNames="MaNV" DataSourceID="dsNhanVien">
         <Columns>
             <asp:BoundField DataField="MaNV" HeaderText="Mã nhân viên" ReadOnly="True" />
             <asp:BoundField DataField="HoNV" HeaderText="Họ nhân viên" />
