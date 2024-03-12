@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ql.master.cs" Inherits="WebApplication1.ql" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+          <!-- Brand/logo -->
+          <a class="navbar-brand" href="#">Trang Quản lý</a>
+  
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="qlNhanVien.aspx">QLNV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="qlPhongBan.aspx">QLPB</a>
+            </li>
+          </ul>
+    </nav>
+    <br>
+        <div style="min-height:300px">
+            <asp:ContentPlaceHolder ID="noiDung" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="text-center pt-3 pb-3 bg-dark text-danger">
+            Người thiết kế : Phạm Huỳnh Tấn PHúc - MSSV: 2221160018
+        </div>
+    </form>
+</body>
+</html>
