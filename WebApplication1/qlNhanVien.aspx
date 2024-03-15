@@ -37,7 +37,7 @@
             <asp:BoundField DataField="HoNV" HeaderText="Họ nhân viên" />
             <asp:BoundField DataField="TenNV" HeaderText="Tên nhân viên" />
             <asp:CheckBoxField DataField="Phai" HeaderText="Phái" />
-            <asp:BoundField DataField="NgaySinh" HeaderText="Ngày sinh" />
+            <asp:BoundField DataField="NgaySinh" DataFormatString="{0:dd/MM/yyyy}" HeaderText="Ngày sinh" />
             <asp:BoundField DataField="NoiSinh" HeaderText="Nơi sinh" />
             <asp:BoundField DataField="MaPhong" HeaderText="Mã phòng" />
             <asp:CommandField ShowEditButton="true" ShowDeleteButton="true" ButtonType="Button"/>
