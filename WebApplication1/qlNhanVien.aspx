@@ -3,6 +3,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="noiDung" runat="server">
     <h2 class="text-center">DANH SÁCH NHÂN VIÊN</h2>
+    <div class="text-right">
+        <a href="ThemNhanVien.aspx" class="btn btn-info">Thêm Nhân viên</a>
+    </div>
     <asp:SqlDataSource ID="dsNhanVien" runat="server" ConnectionString="<%$ ConnectionStrings:QLNhanVienConnectionString %>" 
         DeleteCommand="DELETE FROM [NhanVien] WHERE [MaNV] = @MaNV" 
         InsertCommand="INSERT INTO [NhanVien] ([HoNV], [TenNV], [Phai], [NgaySinh], [NoiSinh], [MaPhong]) VALUES (@HoNV, @TenNV, @Phai, @NgaySinh, @NoiSinh, @MaPhong)"
@@ -43,5 +46,8 @@
             <asp:CommandField ShowEditButton="true" ShowDeleteButton="true" ButtonType="Button"/>
         </Columns>
         <HeaderStyle CssClass="bg-info"/>
+        <PagerSettings Mode="Numeric"/>
+        <PagerStyle HorizontalAlign="Center" />
+        
     </asp:GridView>
 </asp:Content>

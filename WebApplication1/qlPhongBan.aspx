@@ -4,6 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="noiDung" runat="server" >
 
     <h2 class="text-center">DANH SÁCH PHÒNG BAN</h2>
+
     <asp:SqlDataSource ID="dsPhongBan" runat="server" ConnectionString="<%$ ConnectionStrings:QLNhanVienConnectionString %>" 
         SelectCommand="SELECT * FROM [PhongBan]"></asp:SqlDataSource>
     <asp:DropDownList CssClass="row m-auto w-25" ID="ddlPhongBan" runat="server" DataSourceID="dsPhongBan" DataTextField="TenPhong" AutoPostBack="true" DataValueField="MaPhong"></asp:DropDownList>

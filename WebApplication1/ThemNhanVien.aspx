@@ -43,7 +43,8 @@
     <div class="row mb-2">
         <div class="col-md-2"></div>
         <div class="col-md-10">
-            <asp:Button ID="btnSave" runat="server" Text="Save" CssClass="btn btn-primary"/>
+            <asp:Button ID="btnSave" runat="server" OnClick="btnSave_Click" Text="Save" CssClass="btn btn-primary"/>
+            <asp:Label ID="lbThongBao" runat="server" Text=""></asp:Label>
         </div>
     </div>
 

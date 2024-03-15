@@ -15,15 +15,6 @@ namespace WebApplication1
     {
 
         /// <summary>
-        /// btnThemNV control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnThemNV;
-
-        /// <summary>
         /// dsPhongBan control.
         /// </summary>
         /// <remarks>
