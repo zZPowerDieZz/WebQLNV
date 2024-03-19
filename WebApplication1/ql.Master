@@ -10,7 +10,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form runat="server">
+       <form runat="server">
      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
           <!-- Brand/logo -->
           <a class="navbar-brand" href="#">Trang Quản lý</a>
@@ -23,16 +23,29 @@
             <li class="nav-item">
               <a class="nav-link" href="qlPhongBan.aspx">QLPB</a>
             </li>
+               <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Quản lý tin
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="qlTheLoai.aspx">Thể loại</a>
+              <a class="dropdown-item" href="qlTinTuc.aspx">Tin tức</a>
+            </div>
+            </li>
           </ul>
     </nav>
+
     <br>
-        <div style="min-height:300px">
+        <div class="container" style="min-height:300px">
             <asp:ContentPlaceHolder ID="noiDung" runat="server">
             </asp:ContentPlaceHolder>
         </div>
         <div class="text-center pt-3 pb-3 bg-dark text-danger">
             Người thiết kế : Phạm Huỳnh Tấn PHúc - MSSV: 2221160018
         </div>
+    </form>
+    <script src="Scripts/jquery-3.0.0.js"></script>
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
     </form>
 </body>
 </html>
