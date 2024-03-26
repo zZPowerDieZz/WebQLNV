@@ -429,8 +429,11 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="SuaBanTin.aspx" />
     <Content Include="ThemNhanVien.aspx" />
     <Content Include="ThemTinTuc.aspx" />
+    <Content Include="Upload\genz.jpg" />
+    <Content Include="Upload\no_image.png" />
     <Content Include="Web.config" />
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
@@ -483,6 +486,13 @@
     <Compile Include="qlTinTuc.aspx.designer.cs">
       <DependentUpon>qlTinTuc.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SuaBanTin.aspx.cs">
+      <DependentUpon>SuaBanTin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuaBanTin.aspx.designer.cs">
+      <DependentUpon>SuaBanTin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ThemNhanVien.aspx.cs">
       <DependentUpon>ThemNhanVien.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -502,6 +512,7 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.0.0.min.map" />
+    <Content Include="Upload\anh1.jpg" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -512,7 +523,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Upload\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />

@@ -37,7 +37,8 @@
             <asp:BoundField DataField="TomTat" HeaderText="Tóm tắt" />
             <asp:ImageField DataImageUrlField="hinh" DataImageUrlFormatString="~/upload/{0}" ControlStyle-Width="100px" />
             <asp:BoundField DataField="TheLoaiID" HeaderText="ID thể loại"/>
-            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ButtonType="Button" ItemStyle-Wrap="false"/>
+            <asp:HyperLinkField DataNavigateUrlFields="id" DataNavigateUrlFormatString="~/SuaBanTin.aspx?id={0}" Text="Edit"/>
+            <asp:CommandField ShowDeleteButton="True" ButtonType="Button" ItemStyle-Wrap="false"/>
         </Columns>
         <EditRowStyle BackColor="#7C6F57" />
         <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
